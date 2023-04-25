@@ -41,10 +41,10 @@ export default function Home() {
   return (
     <div className="login">
       <h1>Login</h1>
-      <img
+      {/* <img
         src="https://c.tenor.com/cIx3TwnGuvQAAAAC/retard-drooling.gif"
         alt=""
-      />
+      /> */}
       {/* <button onClick={() => navigate(-1)}>Go Back Home</button> */}
       <form onSubmit={handleSubmit}>
         <div>
