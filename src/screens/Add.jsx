@@ -66,7 +66,7 @@ export default function AddPost() {
             onChange={handleInputChange}
           />
         </div>
-        <button type="submit">Enregistrer</button>
+        <button type="submit" onClick={handleSubmitAdd}>Enregistrer</button>
       </form>
     </div>
   );
