@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2,
+p {
+  color: rgb(53, 52, 52);
+  font-size: 1.5em;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid;
+}
+
+input {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.single {
+  color: aliceblue;
+  background-color: rgb(108, 66, 121);
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.single {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Link {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+textarea {
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+}
+
+button {
+  margin-right: 15px;
+}
+
+.redirect {
+  background-color: black;
+  width: 100px;
+  margin: 10px auto;
+}
