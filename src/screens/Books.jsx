@@ -30,10 +30,15 @@ export default function Books() {
 
   useEffect(() => {
     if (posts.length > 0) return;
-    axios.get("https://pco-back-luc.projets.lecoledunumerique.fr/api/books", config).then((response) => {
-      setPosts(response.data);
-      // console.log(response.data);
-    });
+    axios
+      .get(
+        "https://brief11-back-luc.projets.lecoledunumerique.fr/api/books",
+        config
+      )
+      .then((response) => {
+        setPosts(response.data);
+        // console.log(response.data);
+      });
   }, []);
 
   useEffect(() => {
@@ -54,7 +59,10 @@ export default function Books() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${id}`, config)
+      .delete(
+        `https://brief11-back-luc.projets.lecoledunumerique.fr/api/books/${id}`,
+        config
+      )
       .then(function () {
         removePost(id);
       });
@@ -63,7 +71,7 @@ export default function Books() {
   const handleModify = (post) => {
     axios
       .patch(
-        `https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
+        `https://brief11-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
         {
           title: post.title,
           coverText: post.coverText,

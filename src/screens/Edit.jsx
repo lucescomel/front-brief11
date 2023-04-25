@@ -19,7 +19,7 @@ export default function Edit() {
     };
     axios
       .patch(
-        `https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
+        `https://brief11-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
         {
           title: post.title,
           coverText: post.coverText,

@@ -26,7 +26,7 @@ export default function Home() {
     event.preventDefault();
     axios({
       method: "post",
-      url: "https://pco-back-luc.projets.lecoledunumerique.fr/api/login_check",
+      url: "https://brief11-back-luc.projets.lecoledunumerique.fr/api/login_check",
       data: {
         username: state.username,
         password: state.password,
@@ -65,7 +65,9 @@ export default function Home() {
             onChange={handleInputChange}
           />
         </div>
-        <button className="login-button" type="submit">connect</button>
+        <button className="login-button" type="submit">
+          connect
+        </button>
       </form>
     </div>
   );

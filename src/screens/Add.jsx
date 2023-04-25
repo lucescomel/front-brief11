@@ -24,19 +24,19 @@ export default function AddPost() {
 
   const handleSubmitAdd = (post) => {
     axios
-    .post(
-      `https://pco-back-luc.projets.lecoledunumerique.fr/api/books`,
-      {
-        title: post.title,
-        coverText: post.coverText,
-        idAuthor: 35,
-      },
-      config
-    )
-    .then(function () {
-      addNewPost(state);
-      navigate(-1);
-    });
+      .post(
+        `https://brief11-back-luc.projets.lecoledunumerique.fr/api/books`,
+        {
+          title: post.title,
+          coverText: post.coverText,
+          idAuthor: 35,
+        },
+        config
+      )
+      .then(function () {
+        addNewPost(state);
+        navigate(-1);
+      });
   };
 
   return (

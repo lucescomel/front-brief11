@@ -19,9 +19,6 @@ export default function SingleBook() {
 
   const handleSave = () => {
     setIsEditing(false);
-
-    // Code to save changes to the post using axios or any other HTTP client
-    // ...
   };
 
   return (
