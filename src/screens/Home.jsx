@@ -48,20 +48,20 @@ export default function Home() {
       {/* <button onClick={() => navigate(-1)}>Go Back Home</button> */}
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">username</label>
           <input
             type="text"
             name="username"
             id="username"
+            placeholder="Username"
             onChange={handleInputChange}
           />
         </div>
         <div>
-          <label htmlFor="coverText">Password :</label>
           <input
             type="text"
             name="password"
             id="password"
+            placeholder="Password"
             onChange={handleInputChange}
           />
         </div>
