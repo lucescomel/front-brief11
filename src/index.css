@@ -75,7 +75,7 @@ button:focus-visible {
   }
 }
 
-.imgarticles{
+.imgarticles {
   width: 30%;
 }
 
@@ -113,9 +113,13 @@ input {
 }
 
 .redirect:hover {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.606);
 }
 
 button:hover {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.62);
+}
+
+login-button {
+  margin-top: 10px;
 }

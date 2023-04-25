@@ -65,7 +65,7 @@ export default function Home() {
             onChange={handleInputChange}
           />
         </div>
-        <button type="submit">connect</button>
+        <button className="login-button" type="submit">connect</button>
       </form>
     </div>
   );
