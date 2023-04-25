@@ -19,7 +19,7 @@ export default function Edit() {
     };
     axios
       .patch(
-        `http://localhost:8000/api/books/${post.id}`,
+        `https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
         {
           title: post.title,
           coverText: post.coverText,

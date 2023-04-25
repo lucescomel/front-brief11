@@ -25,7 +25,7 @@ export default function AddPost() {
   const handleSubmitAdd = (post) => {
     axios
     .post(
-      `http://localhost:8000/api/books`,
+      `https://pco-back-luc.projets.lecoledunumerique.fr/api/books`,
       {
         title: post.title,
         coverText: post.coverText,

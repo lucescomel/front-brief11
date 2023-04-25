@@ -30,7 +30,7 @@ export default function Books() {
 
   useEffect(() => {
     if (posts.length > 0) return;
-    axios.get("http://localhost:8000/api/books", config).then((response) => {
+    axios.get("https://pco-back-luc.projets.lecoledunumerique.fr/api/books", config).then((response) => {
       setPosts(response.data);
       // console.log(response.data);
     });
@@ -54,7 +54,7 @@ export default function Books() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8000/api/books/${id}`, config)
+      .delete(`https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${id}`, config)
       .then(function () {
         removePost(id);
       });
@@ -63,7 +63,7 @@ export default function Books() {
   const handleModify = (post) => {
     axios
       .patch(
-        `http://localhost:8000/api/books/${post.id}`,
+        `https://pco-back-luc.projets.lecoledunumerique.fr/api/books/${post.id}`,
         {
           title: post.title,
           coverText: post.coverText,

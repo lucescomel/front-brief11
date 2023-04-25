@@ -6,15 +6,15 @@ import Post from "../components/Post/Post";
 
 export default function Home() {
   const navigate = useNavigate();
-  const [state, setState] = useState ({
-    username:"",
-    password:"",
-  })
-const { post, setPosts, removePosts, setCurrentPost } = usePostStore();
-const [toSearch, setToSearch] = useState("")
-const [filterPosts, setFilterPosts] = useState("")
+  const [state, setState] = useState({
+    username: "",
+    password: "",
+  });
+  const { post, setPosts, removePosts, setCurrentPost } = usePostStore();
+  const [toSearch, setToSearch] = useState("");
+  const [filterPosts, setFilterPosts] = useState("");
 
-const handleInputChange = (event) => {
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
     setState((props) => ({
       ...props,
@@ -25,17 +25,17 @@ const handleInputChange = (event) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-        method:"post",
-        url: "http://localhost:8000/api/login_check",
-        data:{
-            username: state.username,
-            password: state.password,
-        },
-    }).then(function(response) {
-        console.log(response.data.token);
-        localStorage.setItem("token", response.data.token);
-        navigate(`books`)
-    })
+      method: "post",
+      url: "https://pco-back-luc.projets.lecoledunumerique.fr/api/login_check",
+      data: {
+        username: state.username,
+        password: state.password,
+      },
+    }).then(function (response) {
+      console.log(response.data.token);
+      localStorage.setItem("token", response.data.token);
+      navigate(`books`);
+    });
   };
 
   return (
